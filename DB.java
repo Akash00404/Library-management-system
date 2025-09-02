@@ -6,7 +6,7 @@ class DB {
     public static Connection get() throws Exception {
         if (con == null || con.isClosed()) {
             con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/library", "root", "Akash@123"
+                "jdbc:mysql://localhost:3306/library", "root", "your_db_password"
             );
         }
         return con;
